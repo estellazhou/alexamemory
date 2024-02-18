@@ -1,0 +1,189 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "firstName",
+              "type": "AMAZON.FirstName"
+            },
+            {
+              "name": "role",
+              "type": "relationships"
+            },
+            {
+              "name": "story",
+              "type": "STORY"
+            },
+            {
+              "name": "state",
+              "type": "state"
+            },
+            {
+              "name": "occupation",
+              "type": "OCCUPATION"
+            }
+          ],
+          "name": "MyMemoriesIntent",
+          "samples": [
+            "who lives in {state}",
+            "tell me a {story}  about {firstName}",
+            "tell me about {firstName}",
+            "tell me about my {role}",
+            "who is my {role}",
+            "who is {firstName}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Grandma"
+              }
+            },
+            {
+              "name": {
+                "value": "John"
+              }
+            },
+            {
+              "name": {
+                "value": "Jane"
+              }
+            }
+          ],
+          "name": "NAMES"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "brother"
+              }
+            },
+            {
+              "name": {
+                "value": "grandpa"
+              }
+            },
+            {
+              "name": {
+                "value": "grandma"
+              }
+            },
+            {
+              "name": {
+                "value": "sister"
+              }
+            },
+            {
+              "name": {
+                "value": "daughter"
+              }
+            },
+            {
+              "name": {
+                "value": "dad"
+              }
+            },
+            {
+              "name": {
+                "value": "mom"
+              }
+            }
+          ],
+          "name": "relationships"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "memory"
+              }
+            },
+            {
+              "name": {
+                "value": "story"
+              }
+            }
+          ],
+          "name": "STORY"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "florida"
+              }
+            },
+            {
+              "name": {
+                "value": "ohio"
+              }
+            },
+            {
+              "name": {
+                "value": "california"
+              }
+            },
+            {
+              "name": {
+                "value": "nevada"
+              }
+            }
+          ],
+          "name": "state"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "work at"
+              }
+            },
+            {
+              "name": {
+                "value": "do"
+              }
+            },
+            {
+              "name": {
+                "value": "work"
+              }
+            },
+            {
+              "name": {
+                "value": "job"
+              }
+            }
+          ],
+          "name": "OCCUPATION"
+        }
+      ],
+      "invocationName": "my memories"
+    }
+  }
+}
